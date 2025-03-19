@@ -12,6 +12,7 @@ void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod) {
     cout << "Move disk " << n << " from " << from_rod << " to " << to_rod << endl;
     towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
 }
+
 int main() {
     int n = 3; // Number of disks
     towerOfHanoi(n, 'A', 'C', 'B');
